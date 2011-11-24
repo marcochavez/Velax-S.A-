@@ -1,355 +1,1791 @@
-body{
-background-color:white;
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font:12px Verdana, Arial, sans-serif;
+}
+h1
+{
+	font-size: 16px;
 }
 
-#container{
-width:800px;
-height:1000px;
-border:1px solid black;
-
+#container
+{
+	width:800px;
+	height:1000px;
+	border:1px solid black;
+	margin: 0 auto 0 auto;
 }
 
-#cabecera{
-background-color:white;
-height:150px;
-width:100%;
-background-image:url('imagenes/Velax.png');
-background-repeat:no-repeat;
+#cabecera
+{
+	position: relative;
+	float: right;
+	height:150px;
+	width:800px;
 }
 
-#cabeceraLink{
-position:absolute;
-width:200px;
-height:20px;
-left: 660px;
-top: 10px;
+#cabecera #logo
+{
+	position: relative;
+	float: left;
+	height:150px;
+	width:150px;
+	background-image:url('imagenes/logo.jpg');
 }
 
-#menu{
-float:left;
-background-color:#0091DB;
-width:100%;
-height:50px;
-padding:0px;
-
+#cabecera a
+{
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+	font-size: 14px;
 }
 
-
-#banner{
-float:left;
-background-color:#E6E2D7;
-height:750px;
-width:200px;
-background-image:url('imagenes/publicidad1.jpg');
-background-repeat:no-repeat;
-background-position:25px 50px;
-
+/*#cabecera a:visited*/
+a:visited
+{
+	color: blue;
 }
 
+#menu
+{	
+	float: right;
+	width:800px;
+} 
 
-
-#main{
-float:left;
-background-color:#E6E2D7;
-width:600px;
-height:750px;
+/* #menu a */
+#menu .menu
+{
+	background-color: #0091DB;
+	display: block;
+	text-align:center;
+	width:100px;
+	height: 32px;
+	font-size: 12px;
+	text-decoration:none;
+	float: left;
+	color: black;
+	padding-top: 14px;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
-#mainProdEstrella {
-	position:absolute;
-	width:400px;
-	height:200px;
-	left: 200px;
-	top: 258px;
-	background-image:url('imagenes/publicidad2.jpg');
-	background-repeat: no-repeat;
+#menu a:hover
+{
+	background-color:lightblue;
+	color: black;
+	font-weight:bold;
 }
 
-#mainProdOferta {
-	position:absolute;
-	width:400px;
-	height:200px;
-	left: 200px;
-	top: 458px;
-	background-image:url('imagenes/publicidad3.jpg');
-	background-repeat: no-repeat;
+#menu #buscador
+{
+	position: relative;
+	float: right;
+	width: 288px;
+	height: 36px;
+	background-color: #0091DB;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top:10px;
+	padding-left:7px;
 }
 
-#mainCatalogo {
-position:absolute;
-width:200px;
-height:20px;
-left: 638px;
-top: 258px;
+#banner
+{	
+	position:relative;
+	float:left;
+	background-color:#E6E2D7;
+	/*height:769px;*/
+	height: 752px;
+	width:200px;
 }
 
-#mainNovedades {
-position:absolute;
-width:180px;
-height:300px;
-left: 610px;
-top: 288px;
-padding:3px;
-background-color:white;
-border:1px solid black;
-}
-
-#nosotrosTitulo1 {
-position:absolute;
-width:120px;
-height:20px;
-left: 210px;
-top: 288px;
-
-}
-#nosotrosTitulo2 {
-position:absolute;
-width:120px;
-height:20px;
-left: 210px;
-top: 488px;
-
-}
-#nosotrosTitulo3 {
-position:absolute;
-width:120px;
-height:20px;
-left: 210px;
-top: 688px;
-
-}
-
-#nosotrosQuienessomos {
-position:absolute;
-width:380px;
-height:140px;
-left: 215px;
-top: 318px;
-
-}
-#nosotrosMision {
-position:absolute;
-width:380px;
-height:90px;
-left: 215px;
-top: 518px;
-
-}
-#nosotrosVision {
-position:absolute;
-width:380px;
-height:120px;
-left: 215px;
-top: 718px;
-
-}
-
-
-#mainImagen1 {
-position:absolute;
-width:120px;
-height:120px;
-left: 610px;
-top: 318px;
-background-image:url('nosotros/quienessomos.png');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-#mainImagen2 {
-position:absolute;
-width:120px;
-height:120px;
-left: 610px;
-top: 518px;
-background-image:url('nosotros/mision.png');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-#mainImagen3 {
-position:absolute;
-width:120px;
-height:120px;
-left: 610px;
-top: 718px;
-background-image:url('nosotros/vision.png');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-
-#footer{
-float:left;
-background-color:#242424;
-width:100%;
-height:50px;
-font-weight:bold;
-color:white;
-text-align:center;
-}
-
-#productosCombo1{
-position:absolute;
-width:180px;
-height:23px;
-left:200px;
-top:258px;
-
-}
-#productosCombo2{
-position:absolute;
-width:180px;
-height:23px;
-left:400px;
-top:258px;
-
-}
-#productosCombo3{
-position:absolute;
-width:180px;
-height:23px;
-left:600px;
-top:258px;
-
-}
-
-#productosTab1{
-position:absolute;
-width:200px;
-height:25px;
-left:210px;
-top:358px;
-
-}
-#productosTab2{
-position:absolute;
-width:120px;
-height:23px;
-left:220px;
-top:408px;
-
-}
-#productosTab3{
-position:absolute;
-width:120px;
-height:23px;
-left:470px;
-top:408px;
-
-}
-#productosTab4{
-position:absolute;
-width:120px;
-height:120px;
-left:220px;
-top:458px;
-background-image:url('imagenes/publi9.jpg');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-#productosTab4a{
-position:absolute;
-width:120px;
-height:120px;
-left:220px;
-top:458px;
-background-image:url('imagenes/publi9.jpg');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-#productosTab5{
-position:absolute;
-width:120px;
-height:120px;
-left:220px;
-top:588px;
-background-image:url('imagenes/publi5.png');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-#productosTab6{
-position:absolute;
-width:120px;
-height:120px;
-left:220px;
-top:718px;
-background-image:url('imagenes/publi6.png');
-background-repeat: no-repeat;
-border:1px solid black;
-}
-#productosTab7{
-position:absolute;
-width:360px;
-height:120px;
-left:380px;
-top:458px;
-
-}
-#productosTab8{
-position:absolute;
-width:360px;
-height:120px;
-left:380px;
-top:588px;
-
-}
-#productosTab9{
-position:absolute;
-width:360px;
-height:120px;
-left:380px;
-top:718px;
-
-}
-
-#tablahistorial{
-position:absolute;
-width:550px;
-height:700px;
-left:200px;
-top:288px;
-}
-#tablahistorial2{
-position:absolute;
-width:550px;
+#banner #publicidad1
+{
+position: relative;
+float: left;
+width:150px;
 height:200px;
-left:200px;
-top:258px;
-border:1px solid black;
-}
-#tablahistorial3{
-position:absolute;
-width:550px;
-height:430px;
-left:200px;
-top:258px;
-border:1px solid black;
+background-image:url('imagenes/publicidad1.jpg');
+margin-top: 50px;
+margin-left: 25px;
 }
 
-#tituloTabla{
-position:absolute;
-width:200px;
-height:50px;
-left:200px;
-top:258px;
-}
-#productosTab3alt{
-position:absolute;
-width:120px;
-height:120px;
-left:220px;
-top:328px;
-background-image:url('imagenes/publi6.png');
-background-repeat: no-repeat;
-border:1px solid black;
+#banner #publicidad2
+{
+position: relative;
+float: left;
+width:150px;
+height:200px;
+background-image:url('imagenes/publicidad2.jpg');
+margin-left: 25px;
+margin-top: 5px;
 }
 
-#productosTab6alt{
-position:absolute;
-width:360px;
-height:120px;
-left:380px;
-top:328px;
-border:1px solid black;
+#main
+{
+	float:right;
+	background-color:#E6E2D7;
+	width:600px;
+	height: 752px;
 }
+
+#main #publicidad3
+{
+	position:absolute;
+	float:left;
+	width:400px;
+	height:200px;
+	background-image:url('imagenes/publicidad3.jpg');
+	
+	margin-top: 50px
+}
+
+#main #publicidad4
+{
+	position:absolute;
+	float:left;
+	width:200px;
+	height:200px;
+	background-image:url('imagenes/publicidad4.jpg');
+	margin-top: 255px;
+}
+
+#main #publicidad5
+{
+	position:absolute;
+	float:left;
+	width:200px;
+	height:200px;
+	background-image:url('imagenes/publicidad5.jpg');
+	margin-left: 200px;
+	margin-top: 255px;
+}
+/*
+#main #catalogo
+{
+	position: absolute;
+	margin-left: 435px;
+	margin-top: 55px;
+}
+
+#main #catalogo a
+{
+	font-size: 11px;
+	text-align: center;
+}  
+*/
+#main #catalogo a
+{
+	display: block;
+	position: absolute;
+	font-size: 11px;
+	text-align: center;
+	margin-left: 435px;
+	margin-top: 55px;
+} 
+
+#main #novedades 
+{
+	position: absolute;
+	width: 140px;
+	height: 180px;
+	padding: 10px;
+	font-size: 9px;
+	margin-top: 100px;
+	margin-left: 420px;
+	border: 1px solid black;
+}
+
+/*  nosotros */
+
+#main #nosotrosTitulo
+{
+	position: absolute;
+	margin-top: 40px;
+	width: 360px;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+
+#main #nosotros
+{
+	position: absolute;
+	margin-top: 100px;
+	width: 360px;
+	height: 480px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+#nosotros p
+{
+	margin-left: 15px;
+}
+
+#main  #nosotrosImagen1
+{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin-top: 110px;
+	margin-left: 440px;
+	background-image:url('imagenes/quienessomos.jpg'); 
+}
+
+#main  #nosotrosImagen2
+{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin-top: 280px;
+	margin-left: 440px;
+	background-image:url('imagenes/mision.jpg'); 
+}
+
+#main  #nosotrosImagen3
+{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin-top: 450px;
+	margin-left: 440px;
+	background-image:url('imagenes/vision.jpg'); 
+}
+
+/* PRODUCTOS */
+#main #marca
+{
+	position:absolute;
+	width:141px;
+	height:20px;
+	margin-top: 90px;
+
+margin-left: 20px;
+}
+
+#main #categoria
+{
+	position:absolute;
+	width:190px;
+	height:20px;
+	margin-top: 90px;
+	margin-left: 200px;
+/*background-color: red; */
+}
+
+#main #subcategoria
+{
+	position:absolute;
+	width:170px;
+	height:20px;
+	margin-top: 90px;
+	margin-left: 400px;
+/*background-color: red; */
+}
+
+
+#productos
+{
+	position: absolute;
+	width: 510px;
+	height: 490px;
+	margin-top: 150px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#productosTitulo
+{
+	position: absolute;
+	height: 40px;
+	width: 500px;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+#productos #descripcion
+{
+	position: absolute;
+	width: 510px;
+	height: 80px;
+}
+
+.producto
+{
+	font-size:14px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.descripcion
+{
+	font-size:14px;
+	float: left;
+	margin-left: 160px;
+		margin-top: 30px;
+}
+
+#productos #descripcion1
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 100px;
+}
+
+#productos #descripcion1imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion1imagen.jpg');
+}
+
+#productos #descripcion1contenido
+{
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 100px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#productos #descripcion2
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 235px;
+}
+
+#productos #descripcion2imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion2imagen.jpg');
+}
+
+#productos #descripcion2contenido
+{
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 100px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#productos #descripcion3
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 370px;
+}
+
+#productos #descripcion3imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion3imagen.jpg');
+}
+
+#productos #descripcion3contenido
+{
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 100px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+/* PRODUCTOS END */
+
+/* CONTACTENOS BEGIN */
+
+
+#main #contactenos
+{
+	position: absolute;
+	width: 420px;
+	height: 40px;
+	/*background-color: yellow;*/
+	margin-top: 50px;
+	margin-left: 70px;
+}
+
+#main #nombreContactenos
+{
+position: absolute;
+/*background-color: red;*/
+margin-top: 100px;
+margin-left: 70px;
+width: 210px;
+height: 25px;
+padding-top: 5px;
+}
+
+#main #inputNombreContactenos
+{
+position: absolute;
+/*background-color: orange;*/
+margin-top: 100px;
+margin-left: 280px;
+width: 210px;
+height: 30px; text-align: right;
+}
+
+#main #apellidoContactenos
+{
+position: absolute;
+/*background-color: blue;*/
+margin-top: 130px;
+margin-left: 70px;
+width: 210px;
+height: 25px;
+padding-top: 5px;
+}
+
+#main #inputApellidoContactenos
+{
+position: absolute;
+/*background-color: pink;*/
+margin-top: 130px;
+margin-left: 280px;
+width: 210px;
+height: 30px; text-align: right;
+}
+
+#main #correoContactenos
+{
+position: absolute;
+/*background-color: lightblue;*/
+margin-top: 160px;
+margin-left: 70px;
+width: 210px;
+height: 25px;
+padding-top: 5px;
+}
+
+#main #inputCorreoContactenos
+{
+position: absolute;
+/*background-color: yellow;*/
+margin-top: 160px;
+margin-left: 280px;
+width: 210px;
+height: 30px;
+text-align: right; 
+}
+
+#main #telefonoContactenos
+{
+position: absolute;
+/*background-color: brown;*/
+margin-top: 190px;
+margin-left: 70px;
+width: 210px;
+height: 25px;
+padding-top: 5px;
+}
+
+#main #inputTelefonoContactenos
+{
+position: absolute;
+/*background-color: purple;*/
+margin-top: 190px;
+margin-left: 280px;
+width: 210px;
+height: 30px; 
+text-align: right;
+}
+
+#main #comentarioContactenos
+{
+	position: absolute;
+	width: 420px;
+	height: 25px;
+	padding-top: 5px;
+	/*background-color: yellow;*/
+	margin-top: 230px;
+	margin-left: 70px;
+}
+
+#main #textareaContactenos
+{
+	position: absolute;
+	width: 420px;
+	height: 180px;
+	/*background-color: yellow; */
+	margin-top: 270px;
+	margin-left: 70px;
+}
+
+#main #botonesContactenos
+{
+	position: absolute;
+	width: 420px;
+	height: 30px;
+	/*background-color: blue;  */
+	margin-top: 460px;
+	margin-left: 70px;
+	text-align: right;
+}
+
+.estiloTextareaContactenos
+ {
+	width:415px;
+	height:180px;
+	resize: none;
+ }
+
+/* CONTACTENOS END */
+
+
+/* MICUENTA BEGIN */
+
+#main #micuenta
+{
+	position: absolute;
+	width: 500px;
+	height: 50px;
+	/*background-color: yellow;  */
+	margin-top: 50px;
+	margin-left: 25px;
+}
+
+#sesion 
+{
+	position: absolute;
+	height: 100px;
+	/*background-color: red; */
+	width: 500px;
+	height: 180px;
+	margin-top: 120px;
+	margin-left: 25px;
+	border: 1px solid black;
+}
+
+#sesion  #inicioDeSesion
+{
+	position:absolute;
+	/*background-color: lightblue; */
+	width: 475px;
+	height: 50px;
+	padding-left: 25px;
+}
+
+#inicioDeSesion h2
+{
+	font-size: 14px;
+}
+
+#sesion #correoSesion
+{
+	position:absolute;
+	/*background-color: yellow; */
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 50px;
+	text-align: right;
+	padding-right: 10px
+}
+
+#sesion  #inputCorreoSesion
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+#sesion #contrasenaSesion
+{
+	position:absolute;
+	/*background-color: yellow; */
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 80px;
+	text-align: right;
+		padding-right: 10px
+}
+
+#sesion  #inputContrasenaSesion
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 80px;
+	margin-left: 200px;
+}
+
+#sesion #botonesSesion
+{
+	position:absolute;
+	/*background-color: pink;  */
+	width: 300px;
+	height: 30px;
+	margin-top: 110px;
+	margin-left: 200px;
+	text-align:center;
+
+}
+
+.olvide
+{
+	display: block;
+	margin-top: 150px;
+	float: right;
+	padding-right: 70px;
+	font-size: 10px;
+}
+/* MICUENTA END */
+
+/* REGISTRARSE BEGIN */
+#main #registrarse
+{
+	width: 540px;
+	height: 50px;
+	/*background-color: orange; */
+	margin-top: 50px; 
+	margin-left:10px;
+}
+
+#main #submain
+{
+	position: absolute;
+	width: 540px;
+	height: 440px;
+	/*margin-top: 50px; */
+	margin-left:10px;
+	/*background-color: red; */
+	border: 1px solid black;
+}
+
+#submain #registroDeUsuarios
+{
+	position: absolute;
+	width: 520px;
+	height: 40px;
+	/*background-color: yellow; */
+	padding-left: 20px;
+}
+
+#registroDeUsuarios h2
+{
+	font-size: 14px;
+}
+
+#submain #correoRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 55px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputcorreoRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 55px;
+	margin-left: 240px;
+}
+
+#submain #contrasenaRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 85px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputContrasenaRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 85px;
+	margin-left: 240px;
+}
+
+#submain #repetirRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 115px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputRepetirRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 115px;
+	margin-left: 240px;
+}
+
+#submain #datosPersonales
+{
+	position: absolute;
+	width: 520px;
+	height: 40px;
+	/*background-color: yellow; */
+	padding-left: 20px;
+	margin-top: 160px;
+}
+
+#datosPersonales h2
+{
+	font-size: 14px;
+}
+
+#submain #nombreRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+		padding-top: 5px;
+		margin-top: 200px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputNombreRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 200px;
+	margin-left: 240px;
+}
+
+#submain #paternoRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+		padding-top: 5px;
+		margin-top: 230px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputPaternoRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 230px;
+	margin-left: 240px;
+}
+
+#submain #maternoRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+		padding-top: 5px;
+		margin-top: 260px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputMaternoRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 260px;
+	margin-left: 240px;
+}
+
+#submain #dniRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+		padding-top: 5px;
+		margin-top: 290px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputDniRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 290px;
+	margin-left: 240px;
+}
+
+#submain #telefonoRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+		padding-top: 5px;
+		margin-top: 320px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputTelefonoRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 320px;
+	margin-left: 240px;
+}
+
+#submain #direccionRegistrarse
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 230px;
+	height: 25px;
+		padding-top: 5px;
+		margin-top: 350px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#submain  #inputDireccionRegistrarse
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 350px;
+	margin-left: 240px;
+}
+
+#submain #distrito
+{
+	position:absolute;
+	/*background-color: brown; */
+	width: 150px;
+	height: 30px;
+	margin-top: 380px;
+	margin-left: 240px;
+	
+}
+
+#submain #obligatorios
+{
+	position:absolute;
+	/*background-color: blue; */
+	width: 150px;
+	height: 30px;
+	margin-top: 380px;
+	margin-left:390px;
+}
+
+.obligatorios
+{
+	font-size: 8px;
+}
+
+#submain #botonesRegistrarse
+{
+	position:absolute;
+	/*background-color: orange; */
+	width: 240px;
+	height: 30px;
+	margin-top: 410px;
+	margin-left: 240px;
+	text-align: right;
+	padding-right: 60px;
+}
+
+/* REGISTRARSE END */
+
+#footer
+{
+	position:relative;
+	float:left;
+	background-color:#242424;
+	width:800px;
+	height:45px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	padding-top: 5px;
+}
+
+/* MAPA BEGIN */
+
+#main #mapaDelSitio
+{
+	position: absolute;
+	width: 550px;
+	height: 40px;
+	/*background-color: red; */
+	margin-top: 50px;
+}
+
+#main #menuMapa
+{
+	position: absolute;
+	width: 540px;
+	height: 30px;
+	margin-top: 100px;
+	border: 1px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+	/*background-color: yellow;*/
+}
+
+#menuMapa a
+{
+	text-decoration: none;
+	float: left;
+	font-size: 9px;
+}
+
+#menuMapa a:hover
+{
+	background-color:lightblue;
+	color: black;
+	height: 30px;
+}
+
+.delmargen
+{
+margin-right: 52px;
+}
+
+#main #listaNosotros
+{
+	position: absolute;
+	/*background-color: orange; */
+	width: 100px;
+	height: 100px;
+	margin-top: 140px;
+	margin-left: 92px;
+}
+#listaNosotros a
+{
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#listaProductos
+{
+	position: absolute;
+	/*background-color: red; */
+	width: 110px;
+	height: 100px;
+	margin-top: 140px;
+	margin-left: 202px;
+}
+
+#listaProductos a
+{
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#listaContactenos
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin-top: 140px;
+	margin-left: 320px;
+}
+
+#listaContactenos a
+{
+	text-decoration: none;
+	font-size: 10px;
+}
+/* MAPA END */
+
+/* HISTORIAL BEGIN */
+#main #historialDeCompras 
+{
+	width: 500px;
+	height: 40px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+#main #tablahistorial
+{
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+#tablahistorial table
+{
+	width: 500px;
+}
+
+#tablahistorial th
+{
+	background-color: gray; 
+	text-align: center;
+}
+
+#tablahistorial td
+{
+	text-align: center;
+	border: 1px solid black;
+}
+/* HISTORIAL END */
+
+/* DEPOSITO BEGIN */
+#main #deposito
+{
+	position: absolute;
+	width: 500px;
+	height: 40px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+#main #depositoParrafo1
+{
+	position: absolute;
+	width: 500px;
+	height: 55px;
+	margin-top: 110px;
+	margin-left: 30px;
+}
+
+#main #depositoParrafo2
+{
+	position: absolute;
+	width: 500px;
+	height: 55px;
+	margin-top: 395px;
+	margin-left: 30px;
+}
+
+#main #tarjetas
+{
+	position: absolute;
+	width: 350px;
+	height: 210px;
+	background-image:url('imagenes/cuentasbancos.jpg'); 
+	margin-top: 175px;
+	margin-left: 105px;
+}
+
+
+/* DEPOSITO END */
+/* pago tarjeta begin */
+
+#main #pagarConTarjetaDeCredito
+{
+position: absolute;
+	width: 500px;
+	height: 40px;
+	margin-top: 50px;
+	margin-left: 50px;
+
+}
+
+#main #imagenTarjetas
+{
+	position: absolute;
+	width: 364px;
+	height: 374px;
+	background-image:url('imagenes/PagoTarjeta.jpg'); 
+	margin-top: 125px;
+	margin-left: 110px;
+}
+
+/* pago tarjeta end */
+/* CARRITO BEGIN */
+#main #carritoDeCompras 
+{
+	width: 500px;
+	height: 40px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+#main #tablaCarrito
+{
+	width:500px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+#tablaCarrito table
+{
+	width: 500px;
+}
+
+#tablaCarrito th
+{
+	background-color: gray; 
+	text-align: center;
+}
+
+#tablaCarrito td
+{
+	text-align: center;
+
+}
+
+#main #pago
+{
+	position: absolute;
+	width: 500px;
+	height: 300px;
+
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+#pago #radio
+{
+	position: absolute;
+	margin-left: 350px;
+}
+
+#pago #parrafos
+{
+position: absolute;
+	width: 460px;
+	height: 120px;
+
+margin-left: 20px;
+
+	margin-top: 80px;
+
+}
+#pago #botonPago
+{
+	position: absolute;
+	width: 100px;
+	height: 50px;
+
+	margin-left: 400px;
+	margin-top: 220px;
+}
+
+/* CARRITO END */
+
+/* MI CUENTA 2 BEGIN */
+#main #correoMiCuenta2
+{
+	position:absolute;
+	/*background-color: red; */
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 100px;
+	text-align: right;
+	padding-right: 10px;
+	margin-left: 50px;
+}
+
+#main  #inputCorreoMiCuenta2
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 100px;
+	margin-left: 250px;
+}
+
+#main #contrasenaMiCuenta2
+{
+	position:absolute;
+	/*background-color: orange; */
+	width: 500px;
+	height: 190px;
+	margin-top: 150px;
+	margin-left: 50px;
+	border: 1px solid black;
+}
+
+#main #contrasenaMiCuenta2 h2
+{
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+#contrasenaMiCuenta2 #anteriorMiCuenta2
+{
+	position:absolute;
+	/*background-color: red; */
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 20px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#contrasenaMiCuenta2 #inputAnteriorMiCuenta2
+{
+	position:absolute;
+	/*background-color: pink; */
+	width: 300px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+#contrasenaMiCuenta2 #nuevaMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 50px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#contrasenaMiCuenta2 #inputNuevaMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+
+
+
+#contrasenaMiCuenta2 #repetirMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 80px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#contrasenaMiCuenta2 #inputRepetirMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 80px;
+	margin-left: 200px;
+}
+
+#contrasenaMiCuenta2 #botonCambiarMiCuenta2
+{
+	position:absolute;
+	width: 260px;
+	height: 25px;
+	margin-top: 110px;
+	margin-left: 180px;
+	text-align: right;
+	padding-right: 40px;
+	padding-top:5px;
+}
+
+#main #datosPersonalesMiCuenta2
+{
+	position:absolute;
+	width: 500px;
+	height: 310px;
+	margin-top: 360px;
+	margin-left: 50px;
+	border: 1px solid black;
+}
+
+#main #datosPersonalesMiCuenta2 h2
+{
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+#datosPersonalesMiCuenta2 #nombreMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 20px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#datosPersonalesMiCuenta2 #inputNombreMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+#datosPersonalesMiCuenta2 #paternoMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 50px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#datosPersonalesMiCuenta2 #inputPaternoMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+#datosPersonalesMiCuenta2 #maternoMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 80px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#datosPersonalesMiCuenta2 #inputMaternoMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 80px;
+	margin-left: 200px;
+}
+
+
+
+#datosPersonalesMiCuenta2 #dniMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 110px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#datosPersonalesMiCuenta2 #inputDniMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 110px;
+	margin-left: 200px;
+}
+
+#datosPersonalesMiCuenta2 #telefonoMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 140px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#datosPersonalesMiCuenta2 #inputTelefonoMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 140px;
+	margin-left: 200px;
+}
+
+
+#datosPersonalesMiCuenta2 #direccionMiCuenta2
+{
+	position:absolute;
+	width: 190px;
+	height: 25px;
+	padding-top: 5px;
+	margin-top: 170px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#datosPersonalesMiCuenta2 #inputDireccionMiCuenta2
+{
+	position:absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 170px;
+	margin-left: 200px;
+}
+
+#datosPersonalesMiCuenta2 #distritoMiCuenta2
+{
+	position:absolute;
+	
+	width: 300px;
+	height: 30px;
+	margin-top: 200px;
+	margin-left: 200px;
+}
+
+#datosPersonalesMiCuenta2 #botonGuardarMiCuenta2
+{
+	position:absolute;
+	
+	width: 260px;
+	height: 25px;
+	margin-top: 230px;
+	margin-left: 180px;
+	text-align: right;
+	padding-right: 40px;
+	padding-top:5px;
+}
+
+.historial
+{
+	display: block;
+	position: absolute;
+	font-size: 11px;
+	text-align: center;
+	margin-left: 435px;
+	margin-top: 50px;
+} 
+
+/* MI CUENTA 2 END */
+
+/* PRODUCTOS 2 BEGIN */
+#productos2
+{
+	position: absolute;
+	width: 510px;
+	height: 640px;
+	margin-top: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+	
+}
+
+#productos2 #descripcion
+{
+	position: absolute;
+	width: 510px;
+	height: 40px;
+	
+}
+
+#productos2 #descripcion1
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 60px;
+	
+}
+
+#productos2 #descripcion1imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion1imagen.jpg');
+}
+
+#productos2 #descripcion1contenido
+{
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 80px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#descripcion1 #precio
+ {
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 150px;
+ }
+
+#descripcion1 #stepper
+{
+	position: absolute;
+	margin-top:75px;
+	width: 45px;
+	margin-left: 250px;
+}
+
+#descripcion1 #cantidad
+{
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 300px;
+}
+
+#descripcion1 #checkbox
+{
+	position: absolute;
+	margin-top:90px;
+	width: 90px;
+	margin-left: 390px;
+}
+
+#productos2 #descripcion2
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 195px;
+}
+
+#productos2 #descripcion2imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion2imagen.jpg');
+}
+
+#productos2 #descripcion2contenido
+{
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 80px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#descripcion2 #precio
+ {
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 150px;
+ }
+
+#descripcion2 #stepper
+{
+	position: absolute;
+	margin-top:75px;
+	width: 45px;
+	margin-left: 250px;
+}
+
+#descripcion2 #cantidad
+{
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 300px;
+}
+
+#descripcion2 #checkbox
+{
+	position: absolute;
+	margin-top:90px;
+	width: 90px;
+	margin-left: 390px;
+}
+
+#productos2 #descripcion3
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 330px;
+}
+
+#productos2 #descripcion3imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion3imagen.jpg');
+}
+
+#productos2 #descripcion3contenido
+{
+
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 80px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#descripcion3 #precio
+ {
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 150px;
+ }
+
+#descripcion3 #stepper
+{
+	position: absolute;
+	margin-top:75px;
+	width: 45px;
+	margin-left: 250px;
+}
+
+#descripcion3 #cantidad
+{
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 300px;
+}
+
+#descripcion3 #checkbox
+{
+	position: absolute;
+	margin-top:90px;
+	width: 90px;
+	margin-left: 390px;
+}
+
+#productos2 #descripcion4
+{
+	position: absolute;
+	width: 510px;
+	height: 120px;
+	margin-top: 465px;
+}
+
+#productos2 #descripcion4imagen
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image:url('imagenes/descripcion1imagen.jpg');
+}
+
+#productos2 #descripcion4contenido
+{
+	position: relative;
+	float: right;
+	width: 330px;
+	height: 80px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#descripcion4 #precio
+ {
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 150px;
+ }
+
+#descripcion4 #stepper
+{
+	position: absolute;
+	margin-top:75px;
+	width: 45px;
+	margin-left: 250px;
+}
+
+#descripcion4 #cantidad
+{
+	position: absolute;
+	margin-top:93px;
+	width: 60px;
+	margin-left: 300px;
+}
+
+#descripcion4 #checkbox
+{
+	position: absolute;
+	margin-top:90px;
+	width: 90px;
+	margin-left: 390px;
+}
+
+#productos2 #botones
+{
+	position: absolute;
+	width: 390px;
+	height: 30px;
+	margin-top: 600px;
+	margin-left: 120px;
+	text-align: center;
+}	
 
 .numeric-stepper {
 	width:3.425em;
@@ -385,3 +1821,5 @@ border:1px solid black;
 .numeric-stepper button.minus {
 	bottom:0;
 }
+
+/* PRODUCTOS 2 END */
